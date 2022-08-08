@@ -13,17 +13,21 @@ const REPOSITORY_DETAILS_URL = `${GITHUB_API_URL}/repos`
 
 const getTopRepositories = async (currentPage = CURRENT_PAGE) => {
     const rawResult = await axios.get(`${TOP_REPOSITORY_GITHUB_URL}&page=${currentPage}`)
-    const modifiedResult = rawResult.data.items.map(item => {
+    const finalResult = {
+        count: rawResult.data.total_count,
+        items: []
+    }
+    finalResult.items = rawResult.data.items.map(item => {
         return {
             id: item.id,
             name: item.full_name,
             description: item.description,
-            stargazers_count: item.stargazers_count,
+            forks_count: item.forks_count,
             watchers_count: item.watchers_count,
             avatar_url: item.owner.avatar_url
         }
     })
-    return modifiedResult
+    return finalResult
 }
 
 const getRepositoriesList = async (searchKeyword = DEFAULT_SEARCH_KEYWORD) => {
