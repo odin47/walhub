@@ -10,9 +10,10 @@
 
         .rightContainer {
             order: 2;
+            flex: 3;
             text-align: right;
             padding-right: 1.5rem;
-            @include flex($justify: flex-end, $align: center, $basis: 50%);
+            @include flex($justify: left, $align: center, $basis: 50%);
 
             .sideNav {
                 height: 100%;
@@ -70,6 +71,10 @@
 
 .imageContainer {
     width: 40%;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .btnClose {

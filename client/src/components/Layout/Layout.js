@@ -3,10 +3,10 @@ import Footer from "../Footer"
 import Header from "../Header"
 import styles from "./Layout.module.scss"
 
-const Layout = ({children}) => {
+const Layout = ({children, handleSearch, searchList}) => {
   return (
     <div className={styles.container}>
-        <Header/>
+        <Header searchList={searchList} handleSearch={handleSearch}/>
             <>
                 {children}
             </>

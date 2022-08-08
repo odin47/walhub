@@ -20,7 +20,10 @@ const repositoryReducer = (state = initialState, {type, payload}) => {
     switch(type) {
         case ReducerTypes.GET_REPOSITORY_SEARCH_LIST: return {
             ...state,
-            searchList: payload
+            searchList: {
+                ...state.searchList,
+                data: payload.data
+            }
         }
         case ReducerTypes.GET_TRENDING_REPOSITORIES: return {
             ...state,
@@ -34,7 +37,7 @@ const repositoryReducer = (state = initialState, {type, payload}) => {
             ...state,
             currentRepository: {
                 ...state.currentRepository,
-                data: payload.data
+                data: payload?.data? payload.data : []
             }
         }
         default: return state
