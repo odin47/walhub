@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+}
+
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.repositoryDetailsContainer {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  margin: 1rem 0;
+  .childContainer {
+    display: flex;
+    width: 800px;
+    .leftContainer {
+      flex: 1;
+      .imageContainer {
+        width: 15rem;
+      }
+    }
+  
+    .rightContainer {
+      flex: 2;
+
+      .dataContainer {
+        margin-bottom: 3rem;
+        span {
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

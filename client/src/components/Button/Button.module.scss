@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+
+button {
+    height: 50px;
+    position: relative;
+    font-size: 1.2rem;
+    margin: 1em;
+    padding: .2em;
+    width: 150px;
+    background: none;
+    border: 4px solid;
+    cursor: pointer;
+    outline: none;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 4px;
+        background: $primaryColor;
+        transform: skewX(50deg);
+        transition: .4s linear;
+    }
+
+    &::before {
+        top: -4px;
+        left: 10%;
+    }
+
+    &::after {
+        bottom: -4px;
+        right: 10%;
+    }
+
+    &:hover::before {
+        left: 80%;
+    }
+
+    &:hover::after {
+        right: 80%;
+    }
+
+}
+
+.primary {
+    color: $tertiaryColor;
+    &::before, &::after {
+        background: $primaryColor;
+    }
+}
+
+.green {
+    color: green;
+    &::before, &::after {
+        background: white;
+    }
+}

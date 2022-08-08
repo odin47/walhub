@@ -7,7 +7,7 @@ const Header = () => {
         <div className={styles.container}>
             <div className={styles.leftContainer}>
                 <div className={styles.imageContainer}>
-                    <img src="logo.png" alt="logo" width="100%"/>
+                    <img src="/logo.png" alt="logo" width="100%"/>
                     <span>wal_hub</span>
                 </div>
             </div>

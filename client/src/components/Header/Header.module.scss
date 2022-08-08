@@ -2,8 +2,6 @@
 @import "../../styles/mixins";
 
 .header {
-    position: absolute;
-    z-index: 99999;
     width: 100%;
     background: $primaryColor;
     padding-bottom: 6px;

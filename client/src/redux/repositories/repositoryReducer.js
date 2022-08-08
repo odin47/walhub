@@ -7,6 +7,7 @@ const initialState = {
     },
     repositoryList: {
         loading: false,
+        count: 0,
         data: []
     },
     currentRepository: {
@@ -23,11 +24,18 @@ const repositoryReducer = (state = initialState, {type, payload}) => {
         }
         case ReducerTypes.GET_TRENDING_REPOSITORIES: return {
             ...state,
-            repositoryList: payload
+            repositoryList: {
+                ...state.repositoryList,
+                count: payload.data.count,
+                data: payload.data.items
+            }
         }
         case ReducerTypes.GET_REPOSITORY_DETAILS: return {
             ...state,
-            currentRepository: payload
+            currentRepository: {
+                ...state.currentRepository,
+                data: payload.data
+            }
         }
         default: return state
     }

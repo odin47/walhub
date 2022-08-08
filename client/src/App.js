@@ -16,7 +16,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" exact element={<Home/>}></Route>
-            <Route path="/repository/:repositoryId" exact element={<RepositoryDetails />}></Route>
+            <Route path="/repository/:user/:repositoryName" exact element={<RepositoryDetails />}></Route>
             <Route>404 NOT FOUND!!</Route>
           </Routes>
         </Layout>
