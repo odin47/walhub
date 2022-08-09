@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import Footer from "../Footer"
 import Header from "../Header"
 import styles from "./Layout.module.scss"
@@ -13,6 +13,12 @@ const Layout = ({children, handleSearch, searchList}) => {
         <Footer />
     </div>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node,
+  handleSearch: PropTypes.func,
+  searchList: PropTypes.object
 }
 
 export default Layout

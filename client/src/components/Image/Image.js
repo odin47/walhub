@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types'
 import styles from './Image.module.scss'
 
-const Image = ({data, name, title, backgroundColor, loading, draggable}) => {
+const Image = ({data, name}) => {
     return (
         <img
             className={styles.imageContainer}
@@ -8,6 +9,11 @@ const Image = ({data, name, title, backgroundColor, loading, draggable}) => {
             alt={name}
         />
     )
+}
+
+Image.propTypes = {
+    data: PropTypes.string,
+    name: PropTypes.string
 }
 
 export default Image;

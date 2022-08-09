@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { Link } from "react-router-dom"
 import Input from '../Input'
 import styles from './Header.module.scss'
@@ -19,6 +20,11 @@ const Header = ({handleSearch, searchList}) => {
         </div>
     </header>
   )
+}
+
+Header.propTypes = {
+  handleSearch: PropTypes.func,
+  searchList: PropTypes.object
 }
 
 export default Header

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import Button from '../Button'
@@ -15,6 +16,13 @@ const Pagination = ({count, currentPage, handleBackward, handleForward}) => {
         </Button>
     </div>
   )
+}
+
+Pagination.propTypes = {
+  count: PropTypes.number,
+  currentPage: PropTypes.number,
+  handleBackward: PropTypes.func,
+  handleForward: PropTypes.func
 }
 
 export default Pagination
