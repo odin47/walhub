@@ -5,7 +5,7 @@ import styles from './Header.module.scss'
 
 const Header = ({handleSearch, searchList}) => {
   return (
-    <header className={styles.header}>
+    <header data-testid="header-test" className={styles.header}>
         <div className={styles.container}>
             <div className={styles.leftContainer}>
               <div className={styles.imageContainer}>
@@ -15,7 +15,7 @@ const Header = ({handleSearch, searchList}) => {
               </div>
             </div>
             <div className={styles.rightContainer}>
-              <Input listData={searchList.data} handleSearch={handleSearch}/>
+              <Input listData={searchList?.data} handleSearch={handleSearch}/>
             </div>
         </div>
     </header>
