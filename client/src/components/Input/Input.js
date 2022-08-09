@@ -15,7 +15,7 @@ const Input = ({listData, handleSearch}) => {
     }, [debounceSearch])
 
     return (
-        <div className={InputStyles.container}>
+        <div data-testid="input-test" className={InputStyles.container}>
             <input onChange={(ev) => setState(ev.target.value)} value={state} />
             {
                 listData && listData.length > 0 && <ul>
