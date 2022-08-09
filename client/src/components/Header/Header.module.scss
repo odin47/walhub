@@ -5,6 +5,12 @@
     width: 100%;
     background: $primaryColor;
     padding-bottom: 6px;
+    a {
+        span {
+            font-family: Poppins, Arial, serif;
+            font-weight: black;
+        }
+    }
     .container {
         @include flex();
 

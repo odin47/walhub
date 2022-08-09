@@ -1,5 +1,23 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: local('Poppins'), url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: local('Poppins'), url(./fonts/Poppins/Poppins-Black.ttf) format('truetype');
+}
 body {
   margin: 0px;
+  font-family: Poppins, Arial, serif;
+  font-weight: black;
 }
 
 .homeContainer {
