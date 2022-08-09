@@ -8,7 +8,7 @@ Walmart's own custom GitHub repository
 
 In the project directory, you can run:
 
-### `npm run install`
+### `npm install`
 
 Installs all the dependancies.
 
@@ -48,7 +48,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 In the project directory, you can run:
 
-### `npm run install`
+### `npm install`
 
 Installs all the dependancies.
 
