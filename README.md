@@ -2,6 +2,10 @@
 
 Walmart's own custom GitHub repository
 
+```diff
+- Caution :- There is a rate limit for GitHub API's for guest user (10 calls per minute)
+```
+
 ## Available Scripts for Client
 
 ### `cd ./client`
