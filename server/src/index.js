@@ -17,3 +17,5 @@ app.get('/', (req, res) => {
 app.listen(NODE_API_PORT, () => {
   console.log(`App is running on ${NODE_API_PORT}`)
 })
+
+export default app
