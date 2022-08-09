@@ -3,32 +3,12 @@
 
 .footer {
     background: $tertiaryColor;
-    color: gray;
+    color: $backgroundColor;
     padding: 40px 10px;
     text-align: center;
     @include flex(column);
         
-    a {
-        text-decoration: none;
-        color: gray;
-        &:hover {
-            color: white;
-        }
-    }
-
-    
-}
-
-.footer-info {
-    flex: 1;
-    line-height: 40px;
-}
-
-.footer-links {
-    flex: 1;
-    font-size: 2rem;
-    @include flex($justify: space-around, $align: center);
-    .icon-link {
-        color: $primaryColor;
+    span {
+        color: $redColor;
     }
 }
