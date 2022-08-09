@@ -4,6 +4,7 @@ import styles from './Image.module.scss'
 const Image = ({data, name}) => {
     return (
         <img
+            data-testid="image-test"
             className={styles.imageContainer}
             src={data}
             alt={name}
