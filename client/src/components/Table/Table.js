@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import {convertString} from '../../utils/convertStrings';
 import styles from './Table.module.scss'
 
 const Table = ({data}) => {
@@ -8,7 +9,7 @@ const Table = ({data}) => {
         {
             data && data.length > 0 && data.map((item, index) => (
                 <tr key={`${index}-${item.name}`}>
-                    <td><span>{item.name}</span></td>
+                    <td><span>{convertString(item.name, "_", " ")}</span></td>
                     <td>{item.value}</td>
                 </tr>
             ))
