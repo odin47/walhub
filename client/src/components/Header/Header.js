@@ -9,8 +9,7 @@ const Header = ({handleSearch, searchList}) => {
             <div className={styles.leftContainer}>
               <div className={styles.imageContainer}>
                 <Link  to={'/'}>
-                    <img src="/logo.png" alt="logo" width="100%"/>
-                    <span>wal_hub</span>
+                    <img src="/walmartLogo.svg" alt="logo" height={40} />
                 </Link>
               </div>
             </div>
