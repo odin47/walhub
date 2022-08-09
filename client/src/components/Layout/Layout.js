@@ -5,7 +5,7 @@ import styles from "./Layout.module.scss"
 
 const Layout = ({children, handleSearch, searchList}) => {
   return (
-    <div className={styles.container}>
+    <div data-testid="layout-test" className={styles.container}>
         <Header searchList={searchList} handleSearch={handleSearch}/>
             <>
                 {children}
