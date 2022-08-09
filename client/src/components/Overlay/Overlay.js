@@ -3,7 +3,7 @@ import styles from './Overlay.module.scss'
 
 const Overlay = () => {
   return (
-    <div className={styles.overlayContainer}>
+    <div data-testid="overlay-test" className={styles.overlayContainer}>
         <Spinner />
     </div>
   )

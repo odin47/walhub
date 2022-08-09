@@ -6,7 +6,7 @@ import styles from './Pagination.module.scss';
 
 const Pagination = ({count, currentPage, handleBackward, handleForward}) => {
   return (
-    <div className={styles.paginationContainer}>
+    <div data-testid="pagination-test" className={styles.paginationContainer}>
         <Button handleAction={handleBackward}>
             <FontAwesomeIcon icon={faChevronLeft} />
         </Button>

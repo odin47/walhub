@@ -4,7 +4,7 @@ import styles from './Table.module.scss'
 
 const Table = ({data}) => {
   return (
-    <table className={styles.tableContainer}>
+    <table data-testid="table-test" className={styles.tableContainer}>
         <tbody>
         {
             data && data.length > 0 && data.map((item, index) => (
