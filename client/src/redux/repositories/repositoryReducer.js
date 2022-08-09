@@ -1,6 +1,7 @@
 import {ReducerTypes} from './repositoryTypes'
 
 const initialState = {
+    loading: false,
     searchList: {
         loading: false,
         data: []
@@ -39,6 +40,10 @@ const repositoryReducer = (state = initialState, {type, payload}) => {
                 ...state.currentRepository,
                 data: payload?.data? payload.data : []
             }
+        }
+        case ReducerTypes.SET_LOADING_STATUS: return {
+            ...state,
+            loading: payload
         }
         default: return state
     }

@@ -7,12 +7,14 @@ import {useDispatch, useSelector} from 'react-redux'
 import {getRepositorySearchList} from './redux/repositories/repositoryActions'
 import Home from './views/Home';
 import RepositoryDetails from './views/RepositoryDetails';
+import Overlay from './components/Overlay';
 import Layout from './components/Layout/Layout';
 import './App.scss';
 
 
 function App() {
   const searchList = useSelector((state) => state.repositoryData.searchList)
+  const loadingStatus = useSelector((state) => state.repositoryData.loading)
   const dispatch = useDispatch()
 
   const handleSearch = (value) => {
@@ -22,6 +24,9 @@ function App() {
 
   return (
     <div>
+        {
+          loadingStatus && <Overlay />
+        }
       <Router>
         <Layout searchList={searchList} handleSearch={handleSearch}>
           <Routes>

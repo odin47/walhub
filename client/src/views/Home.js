@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {useNavigate} from 'react-router-dom';
+import {getTrendingRepositories} from '../redux/repositories/repositoryActions'
 import Tile from '../components/Tile/Tile'
 import Pagination from '../components/Pagination'
-import {getTrendingRepositories} from '../redux/repositories/repositoryActions'
 import styles from '../index.module.scss'
 
 function Home() {
