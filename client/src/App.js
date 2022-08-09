@@ -14,6 +14,7 @@ import './App.scss';
 function App() {
   const searchList = useSelector((state) => state.repositoryData.searchList)
   const dispatch = useDispatch()
+
   const handleSearch = (value) => {
     if(value && value.length > 0)
       dispatch(getRepositorySearchList(value))

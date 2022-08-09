@@ -1,18 +1,20 @@
+@import './styles/variables';
+
 @font-face {
   font-family: 'Poppins';
-  src: local('Poppins'), url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+  src: local('Poppins'), url(./styles/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 900;
-    src: local('Poppins'), url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+    src: local('Poppins'), url(./styles/fonts/Poppins/Poppins-Bold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 900;
-    src: local('Poppins'), url(./fonts/Poppins/Poppins-Black.ttf) format('truetype');
+    src: local('Poppins'), url(./styles/fonts/Poppins/Poppins-Black.ttf) format('truetype');
 }
 body {
   margin: 0px;
